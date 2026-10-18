@@ -1,6 +1,5 @@
 using System.Net;
 using System.Net.Http.Json;
-using Thunderfall.Application;
 using Thunderfall.Application.Contracts;
 
 namespace Thunderfall.Api.IntegrationTests;

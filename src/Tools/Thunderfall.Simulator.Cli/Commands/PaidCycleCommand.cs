@@ -1,7 +1,5 @@
 using System.Globalization;
-using Thunderfall.Engine.Abstractions;
 using Thunderfall.Engine.Abstractions.Contracts;
-using Thunderfall.Engine.Simulation;
 using Thunderfall.Engine.Simulation.Simulation;
 using Thunderfall.Simulator.Cli.Reporting;
 

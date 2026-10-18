@@ -1,9 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Thunderfall.Application;
 using Thunderfall.Application.Entities;
 using Thunderfall.Application.Persistence;
-using Thunderfall.Engine.Abstractions;
 using Thunderfall.Engine.Abstractions.Contracts;
 using Thunderfall.Infrastructure;
 

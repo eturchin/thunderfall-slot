@@ -1,4 +1,3 @@
-using Thunderfall.Application;
 using Thunderfall.Application.Errors;
 
 namespace Thunderfall.Api.Security;

@@ -1,5 +1,4 @@
 using System.Net;
-using Thunderfall.Application;
 using Thunderfall.Application.Contracts;
 
 namespace Thunderfall.Api.IntegrationTests;

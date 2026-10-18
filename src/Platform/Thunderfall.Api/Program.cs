@@ -2,7 +2,6 @@ using Microsoft.EntityFrameworkCore;
 using Thunderfall.Api.Configuration;
 using Thunderfall.Api.Endpoints;
 using Thunderfall.Api.Middleware;
-using Thunderfall.Engine.Abstractions;
 using Thunderfall.Engine.Abstractions.Contracts;
 using Thunderfall.Infrastructure;
 

@@ -4,7 +4,7 @@ Set-Location (Split-Path $PSScriptRoot -Parent)
 $env:TF_TEST_POSTGRES=$env:ConnectionStrings__Game
 dotnet restore --locked-mode
 if($LASTEXITCODE -ne 0){throw 'Restore failed'}
-dotnet build -c Release --no-restore
+dotnet build -c Release --no-restore -t:Rebuild
 if($LASTEXITCODE -ne 0){throw 'Build failed'}
 dotnet test -c Release --no-build --logger trx
 if($LASTEXITCODE -ne 0){throw 'Backend verification failed'}

@@ -1,8 +1,6 @@
 using System.Net.Http.Json;
 using System.Text.Json;
-using Thunderfall.Application;
 using Thunderfall.Application.Contracts;
-using Thunderfall.Engine.Abstractions;
 using Thunderfall.Engine.Abstractions.Definitions;
 
 namespace Thunderfall.Api.IntegrationTests;

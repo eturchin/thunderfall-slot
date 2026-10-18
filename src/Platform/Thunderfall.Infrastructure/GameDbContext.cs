@@ -1,5 +1,4 @@
 using Microsoft.EntityFrameworkCore;
-using Thunderfall.Application;
 using Thunderfall.Application.Entities;
 
 namespace Thunderfall.Infrastructure;

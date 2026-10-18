@@ -1,4 +1,3 @@
-using Thunderfall.Application;
 using Thunderfall.Application.Contracts;
 using Thunderfall.Application.Services;
 using static Thunderfall.Api.Security.SessionCredentials;

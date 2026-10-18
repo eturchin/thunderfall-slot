@@ -85,3 +85,9 @@
 - Expanded .gitignore for generated reports, test/coverage/benchmark output, build products, dependencies, caches, IDE state, local configuration, credentials and temporary files. Source fixtures, immutable definitions, simulation plans, lockfiles and shared run configurations remain included.
 - Removed the fixed PostgreSQL installation path from the local database helper; it now resolves POSTGRES_BIN, PATH, or the system Program Files location, and reports a useful error if tools are unavailable. Verified the helper against the existing project-owned development cluster.
 - Verification: 18 representative include/exclude checks passed; README relative links resolve; candidate text files were scanned for personal absolute paths and common private-key/access-token patterns with no findings. This documentation/ignore/helper update did not rerun application tests or simulations; prior measured results remain recorded above.
+
+## CI analyzer and startup repair — 2026-10-18
+
+- Reproduced the GitHub Actions IDE0005 failure with a full local rebuild. Removed 40 unnecessary imports across 29 C# files using the IDE0005 formatter; no analyzer severity, warning-as-error setting, or mathematical behavior was changed.
+- CI and the local test script now request a full rebuild. The browser stage explicitly waits for API readiness and reports early process exits/timeouts. CI retains TRX, Playwright reports/traces, and API logs for seven days, and stops its API process after verification. Manual workflow dispatch is enabled.
+- Local verification: full Release rebuild passed with zero warnings/errors; all 67 backend tests and 18 frontend tests passed; frontend lint and production build passed. Evidence: TestResults/ci-repair.trx. Linux browser tests and container builds will be verified by the subsequent GitHub Actions run; local Docker engine remains unavailable.
