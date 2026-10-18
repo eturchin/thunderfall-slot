@@ -91,3 +91,9 @@
 - Reproduced the GitHub Actions IDE0005 failure with a full local rebuild. Removed 40 unnecessary imports across 29 C# files using the IDE0005 formatter; no analyzer severity, warning-as-error setting, or mathematical behavior was changed.
 - CI and the local test script now request a full rebuild. The browser stage explicitly waits for API readiness and reports early process exits/timeouts. CI retains TRX, Playwright reports/traces, and API logs for seven days, and stops its API process after verification. Manual workflow dispatch is enabled.
 - Local verification: full Release rebuild passed with zero warnings/errors; all 67 backend tests and 18 frontend tests passed; frontend lint and production build passed. Evidence: TestResults/ci-repair.trx. Linux browser tests and container builds will be verified by the subsequent GitHub Actions run; local Docker engine remains unavailable.
+
+### Browser regressions found by Linux CI
+
+- Run 39154464854 passed backend build/tests, migrations and frontend checks, then exposed a stale displayed balance after credit reset. The new component regression failed before the fix (8,000 displayed after restoring 10,000) and passes after the reset response updates both session and displayed balance.
+- Browser assertions retain their outcomes but now allow 15 seconds for real animation on software WebGL; the CI per-test budget is 90 seconds. Recovery tests use reduced motion because they verify persistence, while game tests continue exercising animation. The reload recovery scenario now captures and checks the automatic retry (same payload/key and round ID, one history entry, reconciled balance and cleared pending command) instead of expecting an obsolete manual Retry button.
+- Local production-preview verification: all 7 Chromium E2E scenarios passed in 39.5 seconds. Frontend lint/build and all 19 component tests passed. Linux end-to-end and Docker build verification will be rerun on the next push.

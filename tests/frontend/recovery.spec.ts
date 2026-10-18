@@ -1,5 +1,8 @@
 import { test, expect } from "../../frontend/node_modules/@playwright/test";
 
+// Recovery assertions concern durable requests; animation is covered by game.spec.ts.
+test.use({ reducedMotion: "reduce" });
+
 test("session refresh failure retries the committed round after reload", async ({
     page,
 }) => {
@@ -31,22 +34,23 @@ test("session refresh failure retries the committed round after reload", async (
     const round = await first.json();
     await expect(page.getByRole("alert")).toContainText("RefreshFailed");
 
-    await page.reload();
-    await expect(
-        page.getByRole("button", { name: "Retry round" }),
-    ).toBeEnabled();
+    // Reload automatically reconciles the saved command before enabling play.
     const retryResponse = page.waitForResponse(
         (response) =>
             response.url().endsWith("/rounds") &&
             response.request().method() === "POST",
     );
-    await page.getByRole("button", { name: "Retry round" }).click();
+    await page.reload();
     const retry = await retryResponse;
     expect(retry.request().postDataJSON()).toEqual(command);
     expect((await retry.json()).roundId).toBe(round.roundId);
     await expect(
-        page.getByRole("button", { name: "Skip animation" }),
-    ).toHaveCount(0);
+        page.getByRole("button", { name: "REPLAY ROUND" }),
+    ).toBeEnabled();
+    await expect.poll(() => page.evaluate(() => localStorage.getItem("tf-pending"))).toBeNull();
+    await expect(page.getByTestId("balance")).toHaveText(
+        new Intl.NumberFormat("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(round.balanceAfter / 100),
+    );
 
     const history = await (
         await page.request.get("/api/v1/rounds/history/page")

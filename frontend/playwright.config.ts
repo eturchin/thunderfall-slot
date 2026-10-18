@@ -5,7 +5,9 @@ process.env.NO_PROXY = [process.env.NO_PROXY, "127.0.0.1", "localhost"]
 export default defineConfig({
     testDir: "../tests/frontend",
     workers: 1,
-    timeout: 45000,
+    timeout: process.env.CI ? 90000 : 45000,
+    // Software WebGL on CI needs time to finish real cascade/replay playback.
+    expect: { timeout: 15000 },
     reporter: [["list"], ["html", { open: "never" }]],
     use: {
         baseURL: "http://127.0.0.1:5175",

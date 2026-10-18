@@ -136,6 +136,16 @@ beforeEach(() => {
     vi.mocked(api.replay).mockResolvedValue(round);
 });
 describe("Authoritative client", () => {
+    it("updates the displayed balance after restoring demo credits", async () => {
+        vi.mocked(api.current).mockResolvedValue({ ...session, balance: 800000 });
+        vi.mocked(api.reset).mockResolvedValue(session);
+        await ready();
+        expect(screen.getByTestId("balance")).toHaveTextContent("8,000.00");
+        fireEvent.click(screen.getByRole("button", { name: "RESTORE CREDITS" }));
+        fireEvent.click(screen.getByRole("button", { name: "Restore 10,000 credits" }));
+        await waitFor(() => expect(api.reset).toHaveBeenCalledOnce());
+        await waitFor(() => expect(screen.getByTestId("balance")).toHaveTextContent("10,000.00"));
+    });
     it("shows server balance and sends integer minor-unit stake", async () => {
         fireEvent.click(await ready());
         await waitFor(() => expect(api.round).toHaveBeenCalled());

@@ -424,7 +424,9 @@ export default function App() {
         locked.current = true;
         setBusy(true);
         try {
-            setSession(await api.reset());
+            const restored = await api.reset();
+            setSession(restored);
+            setDisplayedBalance(restored.balance);
             pending.current = undefined;
             clearPendingRound();
             setRound(undefined);
