@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../../Games/Thunderfall.Games/Thunderfall.Games.csproj" />
+        <ProjectReference Include="..\..\Engine\Thunderfall.Engine.Simulation\Thunderfall.Engine.Simulation.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="../../../configs/**/*.json" Link="configs/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+</Project>

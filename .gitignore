@@ -1,0 +1,72 @@
+# Local workspace, databases and research clones
+/.local/
+/.work/
+/.research/
+
+# IDE and operating-system state
+.idea/
+.vs/
+.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# .NET build and package output
+[Bb]in/
+[Oo]bj/
+artifacts/
+.nuget/packages/
+*.nupkg
+*.snupkg
+
+# Frontend dependencies, builds and caches
+node_modules/
+dist/
+.vite/
+.cache/
+.eslintcache
+*.tsbuildinfo
+
+# Generated test, coverage, benchmark and simulation results
+[Tt]est[Rr]esults/
+test-results/
+playwright-report/
+playwright/.cache/
+blob-report/
+coverage/
+.nyc_output/
+BenchmarkDotNet.Artifacts/
+/reports/
+*.trx
+*.coverage
+*.coveragexml
+lcov.info
+
+# Local configuration and credentials; keep documented templates
+.env
+.env.*
+!.env.example
+!.env.*.example
+appsettings.Local.json
+appsettings.*.Local.json
+*.pfx
+*.p12
+*.key
+
+# Logs, process files, crash dumps and editor backups
+*.log
+*.pid
+*.dmp
+*.stackdump
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Keep source assets, fixtures, math snapshots, lockfiles and shared .run configs.

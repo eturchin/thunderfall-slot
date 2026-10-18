@@ -1,0 +1,147 @@
+﻿@font-face {
+    font-family: Anton;
+    src: url("/assets/fonts/Anton-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Cinzel Decorative";
+    src: url("/assets/fonts/CinzelDecorative-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+:root {
+    --font-body: "Segoe UI", Arial, sans-serif;
+    --font-game: Anton, Impact, "Arial Narrow", sans-serif;
+    --font-display: "Cinzel Decorative", Georgia, serif;
+    color-scheme: dark;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: #101622;
+    color: #f5e9df;
+    font: 14px var(--font-body);
+}
+button,
+input,
+select {
+    font: inherit;
+}
+button,
+select {
+    cursor: pointer;
+}
+button {
+    color: inherit;
+    transition:
+        filter 0.15s,
+        transform 0.15s;
+}
+button:hover:not(:disabled) {
+    filter: brightness(1.13);
+}
+button:active:not(:disabled) {
+    transform: translateY(1px);
+}
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+}
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible {
+    outline: 3px solid #7ae4ff;
+    outline-offset: 3px;
+}
+.canvas-host {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+    overflow: hidden;
+    border-radius: 2px;
+    background: #2b1039;
+}
+.canvas-host canvas {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+}
+.canvas-host p {
+    padding: 25px;
+    color: #ffcbc1;
+}
+dialog {
+    background: radial-gradient(ellipse at top, #49264d, #24132f 80%);
+    color: #fff0df;
+    max-width: 750px;
+    width: calc(100% - 28px);
+    max-height: 86dvh;
+    border: 2px solid #e0b968;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow:
+        0 30px 120px #000a,
+        inset 0 0 0 2px #70472e;
+    font-size: 16px;
+    line-height: 1.6;
+}
+dialog::backdrop {
+    background: #100b20c9;
+    backdrop-filter: blur(5px);
+}
+dialog header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ebc77b40;
+}
+dialog h2 {
+    font: 28px var(--font-game);
+    color: #ffe5a2;
+    margin: 0;
+    letter-spacing: 0.6px;
+}
+dialog header button {
+    flex-shrink: 0;
+    border: 1px solid #e8c58180;
+    background: #ffffff08;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 26px;
+}
+dialog p {
+    color: #e0cfe3;
+    line-height: 1.8;
+    font-size: 15px;
+}
+input {
+    accent-color: #eec66c;
+}
+@media (max-width: 500px) {
+    dialog {
+        padding: 18px 14px;
+    }
+    dialog h2 {
+        font-size: 24px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

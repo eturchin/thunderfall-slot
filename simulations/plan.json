@@ -1,0 +1,15 @@
+{
+  "calibrationSeeds": [
+    123456,
+    234567
+  ],
+  "holdoutSeed": 8675309,
+  "holdoutStream": 901,
+  "holdoutCycles": 50000000,
+  "chunkSize": 4096,
+  "selectionRule": "Freeze the candidate before looking at holdout. Never retune from holdout results; report failure or insufficient precision transparently.",
+  "frozenVersion": "1.0.0",
+  "frozenRulesetHash": "08db994bbd11f3ef89794997af7167182e4b0098424b94cfa9a419f224506506",
+  "frozenConfiguration": "configs/thunderfall/v1/frozen-v1.json",
+  "freezeRecordedUtc": "2026-10-17T23:36:58.868702+00:00"
+}

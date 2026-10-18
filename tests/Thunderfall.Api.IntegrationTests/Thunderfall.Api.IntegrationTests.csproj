@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <IsTestProject>true</IsTestProject>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="../../src/Games/Thunderfall.Games/Thunderfall.Games.csproj" />
+        <ProjectReference Include="../../src/Engine/Thunderfall.Engine.Simulation/Thunderfall.Engine.Simulation.csproj" />
+        <ProjectReference Include="../../src/Platform/Thunderfall.Api/Thunderfall.Api.csproj" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" />
+        <PackageReference Include="xunit" />
+        <PackageReference Include="xunit.runner.visualstudio" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" />
+        <Using Include="Xunit" />
+    </ItemGroup>
+    <ItemGroup>
+        <Content Include="../../configs/**/*.json" Link="configs/%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="../Shared/Fixtures.cs" Link="Fixtures.cs" />
+    </ItemGroup>
+</Project>

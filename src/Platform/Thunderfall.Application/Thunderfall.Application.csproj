@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <ProjectReference Include="../../Engine/Thunderfall.Engine/Thunderfall.Engine.csproj" />
+    </ItemGroup>
+</Project>

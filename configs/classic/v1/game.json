@@ -1,0 +1,712 @@
+{
+  "gameId": "classic",
+  "mathVersion": "1.0.0",
+  "name": "Thunderfall Classic",
+  "kind": "Paylines",
+  "layout": {
+    "columns": 5,
+    "rows": 3
+  },
+  "symbols": [
+    "Crown",
+    "ThunderHammer",
+    "GoldenRing",
+    "PurpleGem",
+    "BlueGem",
+    "GreenGem",
+    "RedGem",
+    "YellowGem",
+    "Wild"
+  ],
+  "paytable": {
+    "Crown": [
+      {
+        "minimumCount": 3,
+        "payTicks": 14951670
+      },
+      {
+        "minimumCount": 4,
+        "payTicks": 44855009
+      },
+      {
+        "minimumCount": 5,
+        "payTicks": 149516696
+      }
+    ],
+    "ThunderHammer": [
+      {
+        "minimumCount": 3,
+        "payTicks": 11961336
+      },
+      {
+        "minimumCount": 4,
+        "payTicks": 35884007
+      },
+      {
+        "minimumCount": 5,
+        "payTicks": 104661687
+      }
+    ],
+    "GoldenRing": [
+      {
+        "minimumCount": 3,
+        "payTicks": 8971002
+      },
+      {
+        "minimumCount": 4,
+        "payTicks": 29903339
+      },
+      {
+        "minimumCount": 5,
+        "payTicks": 74758348
+      }
+    ],
+    "PurpleGem": [
+      {
+        "minimumCount": 3,
+        "payTicks": 4485501
+      },
+      {
+        "minimumCount": 4,
+        "payTicks": 11961336
+      },
+      {
+        "minimumCount": 5,
+        "payTicks": 35884007
+      }
+    ],
+    "BlueGem": [
+      {
+        "minimumCount": 3,
+        "payTicks": 3588401
+      },
+      {
+        "minimumCount": 4,
+        "payTicks": 8971002
+      },
+      {
+        "minimumCount": 5,
+        "payTicks": 29903339
+      }
+    ],
+    "GreenGem": [
+      {
+        "minimumCount": 3,
+        "payTicks": 2990334
+      },
+      {
+        "minimumCount": 4,
+        "payTicks": 7475835
+      },
+      {
+        "minimumCount": 5,
+        "payTicks": 23922671
+      }
+    ],
+    "RedGem": [
+      {
+        "minimumCount": 3,
+        "payTicks": 2392267
+      },
+      {
+        "minimumCount": 4,
+        "payTicks": 5980668
+      },
+      {
+        "minimumCount": 5,
+        "payTicks": 17942004
+      }
+    ],
+    "YellowGem": [
+      {
+        "minimumCount": 3,
+        "payTicks": 1495167
+      },
+      {
+        "minimumCount": 4,
+        "payTicks": 4485501
+      },
+      {
+        "minimumCount": 5,
+        "payTicks": 14951670
+      }
+    ]
+  },
+  "baseGenerationProfile": {
+    "initialWeights": [
+      {
+        "symbol": "Crown",
+        "weight": 70
+      },
+      {
+        "symbol": "ThunderHammer",
+        "weight": 80
+      },
+      {
+        "symbol": "GoldenRing",
+        "weight": 90
+      },
+      {
+        "symbol": "PurpleGem",
+        "weight": 120
+      },
+      {
+        "symbol": "BlueGem",
+        "weight": 130
+      },
+      {
+        "symbol": "GreenGem",
+        "weight": 140
+      },
+      {
+        "symbol": "RedGem",
+        "weight": 150
+      },
+      {
+        "symbol": "YellowGem",
+        "weight": 170
+      }
+    ],
+    "refillWeights": [
+      {
+        "symbol": "Crown",
+        "weight": 70
+      },
+      {
+        "symbol": "ThunderHammer",
+        "weight": 80
+      },
+      {
+        "symbol": "GoldenRing",
+        "weight": 90
+      },
+      {
+        "symbol": "PurpleGem",
+        "weight": 120
+      },
+      {
+        "symbol": "BlueGem",
+        "weight": 130
+      },
+      {
+        "symbol": "GreenGem",
+        "weight": 140
+      },
+      {
+        "symbol": "RedGem",
+        "weight": 150
+      },
+      {
+        "symbol": "YellowGem",
+        "weight": 170
+      }
+    ],
+    "orbValues": [
+      {
+        "value": 2,
+        "weight": 6000
+      },
+      {
+        "value": 3,
+        "weight": 2000
+      },
+      {
+        "value": 5,
+        "weight": 1000
+      },
+      {
+        "value": 8,
+        "weight": 400
+      },
+      {
+        "value": 10,
+        "weight": 250
+      },
+      {
+        "value": 15,
+        "weight": 150
+      },
+      {
+        "value": 20,
+        "weight": 100
+      },
+      {
+        "value": 25,
+        "weight": 50
+      },
+      {
+        "value": 50,
+        "weight": 30
+      },
+      {
+        "value": 100,
+        "weight": 15
+      },
+      {
+        "value": 250,
+        "weight": 4
+      },
+      {
+        "value": 500,
+        "weight": 1
+      }
+    ]
+  },
+  "bonusGenerationProfile": {
+    "initialWeights": [
+      {
+        "symbol": "Crown",
+        "weight": 70
+      },
+      {
+        "symbol": "ThunderHammer",
+        "weight": 80
+      },
+      {
+        "symbol": "GoldenRing",
+        "weight": 90
+      },
+      {
+        "symbol": "PurpleGem",
+        "weight": 120
+      },
+      {
+        "symbol": "BlueGem",
+        "weight": 130
+      },
+      {
+        "symbol": "GreenGem",
+        "weight": 140
+      },
+      {
+        "symbol": "RedGem",
+        "weight": 150
+      },
+      {
+        "symbol": "YellowGem",
+        "weight": 170
+      }
+    ],
+    "refillWeights": [
+      {
+        "symbol": "Crown",
+        "weight": 70
+      },
+      {
+        "symbol": "ThunderHammer",
+        "weight": 80
+      },
+      {
+        "symbol": "GoldenRing",
+        "weight": 90
+      },
+      {
+        "symbol": "PurpleGem",
+        "weight": 120
+      },
+      {
+        "symbol": "BlueGem",
+        "weight": 130
+      },
+      {
+        "symbol": "GreenGem",
+        "weight": 140
+      },
+      {
+        "symbol": "RedGem",
+        "weight": 150
+      },
+      {
+        "symbol": "YellowGem",
+        "weight": 170
+      }
+    ],
+    "orbValues": [
+      {
+        "value": 2,
+        "weight": 6000
+      },
+      {
+        "value": 3,
+        "weight": 2000
+      },
+      {
+        "value": 5,
+        "weight": 1000
+      },
+      {
+        "value": 8,
+        "weight": 400
+      },
+      {
+        "value": 10,
+        "weight": 250
+      },
+      {
+        "value": 15,
+        "weight": 150
+      },
+      {
+        "value": 20,
+        "weight": 100
+      },
+      {
+        "value": 25,
+        "weight": 50
+      },
+      {
+        "value": 50,
+        "weight": 30
+      },
+      {
+        "value": 100,
+        "weight": 15
+      },
+      {
+        "value": 250,
+        "weight": 4
+      },
+      {
+        "value": 500,
+        "weight": 1
+      }
+    ]
+  },
+  "featureRules": {
+    "triggerScatters": 4,
+    "initialSpins": 15,
+    "retriggerScatters": 3,
+    "retriggerSpins": 5
+  },
+  "stakes": [
+    1000,
+    2000,
+    5000,
+    10000,
+    20000
+  ],
+  "maxWinMultiplier": 5000,
+  "resourceLimits": {
+    "maxCascades": 2048,
+    "maxBonusRounds": 100000
+  },
+  "reelStrips": [
+    [
+      "BlueGem",
+      "PurpleGem",
+      "YellowGem",
+      "RedGem",
+      "Wild",
+      "PurpleGem",
+      "YellowGem",
+      "YellowGem",
+      "BlueGem",
+      "RedGem",
+      "ThunderHammer",
+      "GreenGem",
+      "ThunderHammer",
+      "GoldenRing",
+      "YellowGem",
+      "PurpleGem",
+      "RedGem",
+      "GoldenRing",
+      "YellowGem",
+      "PurpleGem",
+      "PurpleGem",
+      "YellowGem",
+      "GreenGem",
+      "GreenGem",
+      "GreenGem",
+      "YellowGem",
+      "Crown",
+      "YellowGem",
+      "BlueGem",
+      "Wild",
+      "RedGem",
+      "YellowGem",
+      "GreenGem",
+      "RedGem",
+      "RedGem",
+      "ThunderHammer",
+      "ThunderHammer",
+      "GreenGem",
+      "GoldenRing",
+      "RedGem",
+      "GreenGem",
+      "GreenGem",
+      "BlueGem",
+      "YellowGem",
+      "GoldenRing",
+      "RedGem",
+      "Crown",
+      "RedGem",
+      "BlueGem",
+      "PurpleGem",
+      "GoldenRing",
+      "BlueGem",
+      "Crown",
+      "BlueGem"
+    ],
+    [
+      "YellowGem",
+      "GreenGem",
+      "YellowGem",
+      "GoldenRing",
+      "YellowGem",
+      "GreenGem",
+      "Crown",
+      "RedGem",
+      "PurpleGem",
+      "Wild",
+      "YellowGem",
+      "RedGem",
+      "YellowGem",
+      "BlueGem",
+      "BlueGem",
+      "BlueGem",
+      "YellowGem",
+      "PurpleGem",
+      "GreenGem",
+      "PurpleGem",
+      "RedGem",
+      "ThunderHammer",
+      "BlueGem",
+      "ThunderHammer",
+      "Wild",
+      "GoldenRing",
+      "YellowGem",
+      "RedGem",
+      "GreenGem",
+      "GoldenRing",
+      "BlueGem",
+      "BlueGem",
+      "RedGem",
+      "ThunderHammer",
+      "GreenGem",
+      "BlueGem",
+      "Crown",
+      "YellowGem",
+      "RedGem",
+      "PurpleGem",
+      "Crown",
+      "GreenGem",
+      "RedGem",
+      "YellowGem",
+      "GoldenRing",
+      "ThunderHammer",
+      "RedGem",
+      "GreenGem",
+      "GoldenRing",
+      "GreenGem",
+      "PurpleGem",
+      "RedGem",
+      "PurpleGem",
+      "YellowGem"
+    ],
+    [
+      "GreenGem",
+      "GreenGem",
+      "PurpleGem",
+      "RedGem",
+      "GoldenRing",
+      "GoldenRing",
+      "YellowGem",
+      "BlueGem",
+      "YellowGem",
+      "RedGem",
+      "ThunderHammer",
+      "YellowGem",
+      "GoldenRing",
+      "GoldenRing",
+      "ThunderHammer",
+      "RedGem",
+      "RedGem",
+      "PurpleGem",
+      "RedGem",
+      "YellowGem",
+      "GreenGem",
+      "GoldenRing",
+      "YellowGem",
+      "Wild",
+      "Crown",
+      "RedGem",
+      "YellowGem",
+      "GreenGem",
+      "Wild",
+      "RedGem",
+      "GreenGem",
+      "Crown",
+      "BlueGem",
+      "BlueGem",
+      "BlueGem",
+      "BlueGem",
+      "YellowGem",
+      "BlueGem",
+      "GreenGem",
+      "ThunderHammer",
+      "YellowGem",
+      "PurpleGem",
+      "PurpleGem",
+      "RedGem",
+      "RedGem",
+      "PurpleGem",
+      "Crown",
+      "BlueGem",
+      "YellowGem",
+      "YellowGem",
+      "PurpleGem",
+      "GreenGem",
+      "GreenGem",
+      "ThunderHammer"
+    ],
+    [
+      "GreenGem",
+      "ThunderHammer",
+      "Wild",
+      "BlueGem",
+      "RedGem",
+      "GreenGem",
+      "Crown",
+      "PurpleGem",
+      "BlueGem",
+      "PurpleGem",
+      "RedGem",
+      "Crown",
+      "RedGem",
+      "PurpleGem",
+      "Crown",
+      "GreenGem",
+      "GoldenRing",
+      "BlueGem",
+      "BlueGem",
+      "YellowGem",
+      "Wild",
+      "YellowGem",
+      "PurpleGem",
+      "RedGem",
+      "BlueGem",
+      "GreenGem",
+      "ThunderHammer",
+      "PurpleGem",
+      "YellowGem",
+      "GoldenRing",
+      "RedGem",
+      "GoldenRing",
+      "PurpleGem",
+      "GoldenRing",
+      "BlueGem",
+      "YellowGem",
+      "RedGem",
+      "YellowGem",
+      "RedGem",
+      "YellowGem",
+      "YellowGem",
+      "GreenGem",
+      "ThunderHammer",
+      "YellowGem",
+      "YellowGem",
+      "GreenGem",
+      "GreenGem",
+      "GoldenRing",
+      "GreenGem",
+      "BlueGem",
+      "RedGem",
+      "ThunderHammer",
+      "YellowGem",
+      "RedGem"
+    ],
+    [
+      "YellowGem",
+      "BlueGem",
+      "GreenGem",
+      "GreenGem",
+      "YellowGem",
+      "YellowGem",
+      "GreenGem",
+      "RedGem",
+      "PurpleGem",
+      "PurpleGem",
+      "BlueGem",
+      "ThunderHammer",
+      "RedGem",
+      "ThunderHammer",
+      "PurpleGem",
+      "RedGem",
+      "YellowGem",
+      "GreenGem",
+      "GoldenRing",
+      "YellowGem",
+      "YellowGem",
+      "GreenGem",
+      "Wild",
+      "Crown",
+      "YellowGem",
+      "BlueGem",
+      "BlueGem",
+      "BlueGem",
+      "RedGem",
+      "PurpleGem",
+      "GoldenRing",
+      "ThunderHammer",
+      "PurpleGem",
+      "BlueGem",
+      "GoldenRing",
+      "GreenGem",
+      "GoldenRing",
+      "GreenGem",
+      "Wild",
+      "Crown",
+      "ThunderHammer",
+      "RedGem",
+      "RedGem",
+      "BlueGem",
+      "YellowGem",
+      "RedGem",
+      "Crown",
+      "YellowGem",
+      "GoldenRing",
+      "YellowGem",
+      "PurpleGem",
+      "RedGem",
+      "GreenGem",
+      "RedGem"
+    ]
+  ],
+  "paylines": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    [
+      0,
+      1,
+      2,
+      1,
+      0
+    ],
+    [
+      2,
+      1,
+      0,
+      1,
+      2
+    ]
+  ]
+}

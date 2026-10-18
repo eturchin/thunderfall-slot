@@ -1,0 +1,428 @@
+{
+  "gameId": "thunderfall",
+  "mathVersion": "1.0.0",
+  "name": "Thunderfall: Wrath of the Titans",
+  "kind": "CountAnywhere",
+  "layout": {
+    "columns": 6,
+    "rows": 5
+  },
+  "symbols": [
+    "Crown",
+    "ThunderHammer",
+    "GoldenRing",
+    "PurpleGem",
+    "BlueGem",
+    "GreenGem",
+    "RedGem",
+    "YellowGem",
+    "StormOrb",
+    "ThunderGate"
+  ],
+  "paytable": {
+    "Crown": [
+      {
+        "minimumCount": 8,
+        "payTicks": 1942500
+      },
+      {
+        "minimumCount": 10,
+        "payTicks": 5827500
+      },
+      {
+        "minimumCount": 12,
+        "payTicks": 19425000
+      }
+    ],
+    "ThunderHammer": [
+      {
+        "minimumCount": 8,
+        "payTicks": 1554000
+      },
+      {
+        "minimumCount": 10,
+        "payTicks": 4662000
+      },
+      {
+        "minimumCount": 12,
+        "payTicks": 13597500
+      }
+    ],
+    "GoldenRing": [
+      {
+        "minimumCount": 8,
+        "payTicks": 1165500
+      },
+      {
+        "minimumCount": 10,
+        "payTicks": 3885000
+      },
+      {
+        "minimumCount": 12,
+        "payTicks": 9712500
+      }
+    ],
+    "PurpleGem": [
+      {
+        "minimumCount": 8,
+        "payTicks": 582750
+      },
+      {
+        "minimumCount": 10,
+        "payTicks": 1554000
+      },
+      {
+        "minimumCount": 12,
+        "payTicks": 4662000
+      }
+    ],
+    "BlueGem": [
+      {
+        "minimumCount": 8,
+        "payTicks": 466200
+      },
+      {
+        "minimumCount": 10,
+        "payTicks": 1165500
+      },
+      {
+        "minimumCount": 12,
+        "payTicks": 3885000
+      }
+    ],
+    "GreenGem": [
+      {
+        "minimumCount": 8,
+        "payTicks": 388500
+      },
+      {
+        "minimumCount": 10,
+        "payTicks": 971250
+      },
+      {
+        "minimumCount": 12,
+        "payTicks": 3108000
+      }
+    ],
+    "RedGem": [
+      {
+        "minimumCount": 8,
+        "payTicks": 310800
+      },
+      {
+        "minimumCount": 10,
+        "payTicks": 777000
+      },
+      {
+        "minimumCount": 12,
+        "payTicks": 2331000
+      }
+    ],
+    "YellowGem": [
+      {
+        "minimumCount": 8,
+        "payTicks": 194250
+      },
+      {
+        "minimumCount": 10,
+        "payTicks": 582750
+      },
+      {
+        "minimumCount": 12,
+        "payTicks": 1942500
+      }
+    ]
+  },
+  "baseGenerationProfile": {
+    "initialWeights": [
+      {
+        "symbol": "Crown",
+        "weight": 70
+      },
+      {
+        "symbol": "ThunderHammer",
+        "weight": 80
+      },
+      {
+        "symbol": "GoldenRing",
+        "weight": 90
+      },
+      {
+        "symbol": "PurpleGem",
+        "weight": 120
+      },
+      {
+        "symbol": "BlueGem",
+        "weight": 130
+      },
+      {
+        "symbol": "GreenGem",
+        "weight": 140
+      },
+      {
+        "symbol": "RedGem",
+        "weight": 150
+      },
+      {
+        "symbol": "YellowGem",
+        "weight": 170
+      },
+      {
+        "symbol": "StormOrb",
+        "weight": 25
+      },
+      {
+        "symbol": "ThunderGate",
+        "weight": 25
+      }
+    ],
+    "refillWeights": [
+      {
+        "symbol": "Crown",
+        "weight": 70
+      },
+      {
+        "symbol": "ThunderHammer",
+        "weight": 80
+      },
+      {
+        "symbol": "GoldenRing",
+        "weight": 90
+      },
+      {
+        "symbol": "PurpleGem",
+        "weight": 120
+      },
+      {
+        "symbol": "BlueGem",
+        "weight": 130
+      },
+      {
+        "symbol": "GreenGem",
+        "weight": 140
+      },
+      {
+        "symbol": "RedGem",
+        "weight": 150
+      },
+      {
+        "symbol": "YellowGem",
+        "weight": 170
+      },
+      {
+        "symbol": "StormOrb",
+        "weight": 25
+      },
+      {
+        "symbol": "ThunderGate",
+        "weight": 25
+      }
+    ],
+    "orbValues": [
+      {
+        "value": 2,
+        "weight": 6000
+      },
+      {
+        "value": 3,
+        "weight": 2000
+      },
+      {
+        "value": 5,
+        "weight": 1000
+      },
+      {
+        "value": 8,
+        "weight": 400
+      },
+      {
+        "value": 10,
+        "weight": 250
+      },
+      {
+        "value": 15,
+        "weight": 150
+      },
+      {
+        "value": 20,
+        "weight": 100
+      },
+      {
+        "value": 25,
+        "weight": 50
+      },
+      {
+        "value": 50,
+        "weight": 30
+      },
+      {
+        "value": 100,
+        "weight": 15
+      },
+      {
+        "value": 250,
+        "weight": 4
+      },
+      {
+        "value": 500,
+        "weight": 1
+      }
+    ]
+  },
+  "bonusGenerationProfile": {
+    "initialWeights": [
+      {
+        "symbol": "Crown",
+        "weight": 70
+      },
+      {
+        "symbol": "ThunderHammer",
+        "weight": 80
+      },
+      {
+        "symbol": "GoldenRing",
+        "weight": 90
+      },
+      {
+        "symbol": "PurpleGem",
+        "weight": 120
+      },
+      {
+        "symbol": "BlueGem",
+        "weight": 130
+      },
+      {
+        "symbol": "GreenGem",
+        "weight": 140
+      },
+      {
+        "symbol": "RedGem",
+        "weight": 150
+      },
+      {
+        "symbol": "YellowGem",
+        "weight": 170
+      },
+      {
+        "symbol": "StormOrb",
+        "weight": 35
+      },
+      {
+        "symbol": "ThunderGate",
+        "weight": 15
+      }
+    ],
+    "refillWeights": [
+      {
+        "symbol": "Crown",
+        "weight": 70
+      },
+      {
+        "symbol": "ThunderHammer",
+        "weight": 80
+      },
+      {
+        "symbol": "GoldenRing",
+        "weight": 90
+      },
+      {
+        "symbol": "PurpleGem",
+        "weight": 120
+      },
+      {
+        "symbol": "BlueGem",
+        "weight": 130
+      },
+      {
+        "symbol": "GreenGem",
+        "weight": 140
+      },
+      {
+        "symbol": "RedGem",
+        "weight": 150
+      },
+      {
+        "symbol": "YellowGem",
+        "weight": 170
+      },
+      {
+        "symbol": "StormOrb",
+        "weight": 35
+      },
+      {
+        "symbol": "ThunderGate",
+        "weight": 15
+      }
+    ],
+    "orbValues": [
+      {
+        "value": 2,
+        "weight": 6000
+      },
+      {
+        "value": 3,
+        "weight": 2000
+      },
+      {
+        "value": 5,
+        "weight": 1000
+      },
+      {
+        "value": 8,
+        "weight": 400
+      },
+      {
+        "value": 10,
+        "weight": 250
+      },
+      {
+        "value": 15,
+        "weight": 150
+      },
+      {
+        "value": 20,
+        "weight": 100
+      },
+      {
+        "value": 25,
+        "weight": 50
+      },
+      {
+        "value": 50,
+        "weight": 30
+      },
+      {
+        "value": 100,
+        "weight": 15
+      },
+      {
+        "value": 250,
+        "weight": 4
+      },
+      {
+        "value": 500,
+        "weight": 1
+      }
+    ]
+  },
+  "featureRules": {
+    "triggerScatters": 4,
+    "initialSpins": 15,
+    "retriggerScatters": 3,
+    "retriggerSpins": 5
+  },
+  "stakes": [
+    1000,
+    2000,
+    5000,
+    10000,
+    20000
+  ],
+  "maxWinMultiplier": 5000,
+  "resourceLimits": {
+    "maxCascades": 2048,
+    "maxBonusRounds": 100000
+  },
+  "reelStrips": [],
+  "paylines": []
+}

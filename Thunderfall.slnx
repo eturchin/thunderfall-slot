@@ -1,0 +1,19 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Engine/Thunderfall.Engine/Thunderfall.Engine.csproj" />
+    <Project Path="src/Engine/Thunderfall.Engine.Simulation/Thunderfall.Engine.Simulation.csproj" />
+    <Project Path="src/Games/Thunderfall.Games/Thunderfall.Games.csproj" />
+    <Project Path="src/Platform/Thunderfall.Api/Thunderfall.Api.csproj" />
+    <Project Path="src/Platform/Thunderfall.Application/Thunderfall.Application.csproj" />
+    <Project Path="src/Platform/Thunderfall.Infrastructure/Thunderfall.Infrastructure.csproj" />
+    <Project Path="src/Tools/Thunderfall.Simulator.Cli/Thunderfall.Simulator.Cli.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Thunderfall.Api.IntegrationTests/Thunderfall.Api.IntegrationTests.csproj" />
+    <Project Path="tests/Thunderfall.Architecture.Tests/Thunderfall.Architecture.Tests.csproj" />
+    <Project Path="tests/Thunderfall.Math.Tests/Thunderfall.Math.Tests.csproj" />
+  </Folder>
+  <Folder Name="/benchmarks/">
+    <Project Path="benchmarks/Thunderfall.Benchmarks/Thunderfall.Benchmarks.csproj" />
+  </Folder>
+</Solution>
