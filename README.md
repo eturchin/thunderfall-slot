@@ -2,7 +2,7 @@
 
 **A storm-themed slot game with cascading wins, persistent bonus multipliers, and a deterministic .NET engine.**
 
-Thunderfall combines a playable React/PixiJS client with versioned game mathematics, transactional wallet settlement, replayable rounds, and a reproducible Monte Carlo simulator. Two games share the same engine and platform: the flagship 6?5 cascade game and a classic 5?3 payline slot.
+Thunderfall combines a playable React/PixiJS client with versioned game mathematics, transactional wallet settlement, replayable rounds, and a reproducible Monte Carlo simulator. Two games share the same engine and platform: the flagship 6х5 cascade game and a classic 5х3 payline slot.
 
 ![Thunderfall ? winter temple theme, cascading symbols and bonus controls](docs/images/thunderfall-desktop.png)
 
